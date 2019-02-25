@@ -1,0 +1,751 @@
+/*
+    Theme Name: Alihan AYYILDIZ
+    Description: UI Kurumsal Tema
+    Version: V1
+    Author: Alihan AYYILDIZ
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@fontRoboto : 'Roboto', sans-serif;
+@facebook:#3b5998;
+@twitter:#1da1f2;
+@youtube:#ff0000;
+@instagram: #c32aa3;
+@google:#db4437;
+@bluecolor:#0095eb;
+/*Yukarı kısımdaki siyah header alanı kodları*/
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: @fontRoboto !important;
+    width:100%;
+}
+.no-padding{
+    padding: 0px !important;
+}
+.container{
+    padding:0px !important
+}
+.row{
+    margin: 0px !important;
+}
+.head-black{
+    padding: 0px;
+    height: 45px;
+    background: #333;
+    font-family: @fontRoboto;
+    font-size: 13px;
+    color: #bbbbbb;
+    .head-black-left{
+       line-height: 45px;
+        padding: 0px;
+    }
+    #phone-left{
+       margin-left: 20px;
+    }
+    .tel{
+        margin-right: 20px;
+    }
+    .head-black-right{
+        text-align: right;
+        padding: 0px !important;
+        a{
+            color: #bbbbbb;
+            font-size: 14px;
+            line-height: 45px;
+            margin-right: 7px;
+        }
+        #facebook{
+            &:hover{color:@facebook;}
+        }
+        #twitter{
+            &:hover{color: @twitter;}
+        }
+        #instagram{
+            &:hover{color:@instagram;}
+        }
+        #google{
+            &:hover{color: @google;}
+        }
+        #youtube{
+            &:hover{color: @youtube;}
+        }
+    }
+}
+
+/*Yukarı Kısım Bitiş*/
+/*Header Alanı Başlangıç*/
+.head{
+    padding:0px !important;
+    .logo{
+        padding: 0px;
+        display: inline-block;
+    }
+    .menu{
+        display: inline-block;
+        padding: 0px !important;
+        float:right;
+        margin-top:40px;
+        width:auto;
+        ul{
+            position: relative;
+            z-index: 1;
+            li{
+                list-style: none;
+                display: inline-block;
+                min-width: 100px;
+                height: 60px;
+                // border-right: 1px solid #eee;
+                line-height: 60px;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                    font-family: @fontRoboto;
+                    font-size: 15px;
+                    padding:7px 10px;
+                    border-top-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    transition: 500ms;
+                    -webkit-transition: 500ms;
+                    -moz-transition: 500ms;
+                    -o-transition: 500ms;
+                }
+                &:hover{
+                    a{
+                        color: #fff;
+                        background: #0095eb;
+                        transition: 500ms;
+                        -webkit-transition: 500ms;
+                        -moz-transition: 500ms;
+                        -o-transition: 500ms;
+                    }
+                }
+            }
+        }
+        #son{
+            border: none;
+        }
+    }
+}
+.search-btn{
+    button{
+        border:none;
+        background: transparent;
+        color: #333;
+        padding:14px 15px;
+        transition:300ms;
+        -webkit-transition: 300ms;
+        -o-transition: 300ms;
+        -moz-transition: 300ms;
+        cursor: pointer;
+        &:hover{
+            background:#fff;
+            color: #0095eb;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            -o-transition: 300ms;
+            -moz-transition: 300ms;
+        }
+    }
+}
+#searchbox{
+    width:20%;
+    height: 40px;
+    display: none;
+    position: absolute;
+    right: 0px;
+    margin-top:-30px;
+    background: #333;
+    border-radius: 5px;
+    border: 2px solid #0095eb;
+    z-index:1 !important;
+    input[type='search']{
+        width:100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        padding:10px;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+}
+.respMenu{
+    display: none;
+}
+.carousel-inner{
+    height: 550px;
+}
+.carousel-item{
+    width:100%;
+    height: 100%;
+}
+/*Header Alanı Bitiş*/
+/*Content Alanı Başlangıç*/
+.cf-bg{
+    background: #F2F3F5 !important;
+}
+.center{
+    text-align: center;
+    padding-top: 70px;
+    i{
+        border:1px solid #ddd;
+        border-radius:50%;
+        color: @bluecolor;
+        font-size: 36px;
+        padding: 40px;
+        transition: 500ms;
+        -webkit-box-shadow: 1px 1px 3px 0px rgba(173,170,173,1);
+        -moz-box-shadow: 1px 1px 3px 0px rgba(173,170,173,1);
+        box-shadow: 1px 1px 3px 0px rgba(173,170,173,1);
+    }
+    &:hover{
+        i{
+            background:@bluecolor;
+            color: #fff;
+            transition: 700ms;
+        }
+    }
+}
+.ref-title{
+    font-weight: bold;
+    font-size: 20px;
+    padding:20px 0px;
+}
+#count-bg{
+    max-width: 100%;
+    background: #F2F3F5;
+    margin-top: 70px;
+    padding:70px 0px;
+    overflow-x: hidden;
+}
+.count-title{
+    width:100%;
+    padding: 10px 0px;
+    h2{
+        text-align: center;
+        padding:0px 20px;
+    }
+}
+/*COUNT*/
+.num {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  line-height: 30px;
+  color: #000;
+  display: inline-block;
+}
+.count{
+    text-align: center;
+    padding:0px !important;
+    i{
+        color: @bluecolor;
+        padding: 30px 0px;
+        font-size: 50px;
+    }
+}
+#header{
+    background: #fff;
+}
+/*COUNT*/
+.full-blue{
+    background: #0095eb;
+    font-family: 'Roboto Light';
+    font-size: 30px;
+    padding: 50px 10px;
+    text-align: center;
+    color: #fff;
+}
+.bottom-img{
+    border-right: 2px solid #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 350px;
+    img{
+        transition: 500ms;
+        width: 100%;
+        height:100%;
+    }
+    &:hover{
+        max-height:auto !important;
+        img{
+            transition: 500ms;
+            width: 105%;
+            height: 105% !important;
+            margin-left: -10px;
+        }        
+        .bottom-img-title{
+            margin-top: -200px;
+            transition: 500ms;
+        }
+    }
+}
+.bottom-img-title{
+    text-align: center;
+    margin-top: -70px;
+    cursor: pointer;
+    transition: 500ms;
+    span{
+        background: #0095eb;
+        padding: 7px 13px;
+        border-radius: 5px;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+.bottom-title{
+    font-family: @fontRoboto !important;
+}
+.post{
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+.post-title{
+    padding:20px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.post-write{
+    padding: 0px 20px;
+    padding-bottom:20px;
+    font-size: 16px;
+}
+.date{
+    padding: 10px 35px;
+    color: #aaa;
+    cursor: pointer;
+    transition: 500ms;
+    &:hover{
+        color: #333;
+        transition: 500ms;
+    }
+}
+.readmore{
+    padding:10px 40px;
+    text-align:right;
+    a{
+        color: #aaa;
+        text-decoration: none;
+        transition: 500ms;
+        &:hover{
+            color: #333;
+            transition: 500ms;
+        }
+    }
+}
+.post-big-title{
+    width:100%;
+    font-size: 30px;
+    font-family: @fontRoboto !important;
+    padding: 50px 10px;
+    text-align: center;
+}
+.post-img{
+    z-index:1 !important;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    max-height: 250px;
+    img{
+        width: 100%;
+        transition: 500ms;
+        &:hover{
+            transition: 500ms;
+            width:107%;
+            margin-left: -10px;
+        }
+    }   
+}
+/*Footer*/
+.footer{
+    height: auto;
+    min-height: 100px;
+    background: #292B33;
+}
+.footer-left{
+    line-height: 100px;
+    color: #aaa;
+    padding:0px 30px
+}
+.footer-social{
+    text-align: right;
+    padding:0px 30px;
+    a{
+        color: #bbbbbb;
+        font-size: 14px;
+        line-height: 100px;
+        margin-right: 7px;
+    }
+    #facebook{
+        &:hover {
+            color: @facebook;
+            transition: 500ms;
+        }
+    }
+    #twitter{
+        &:hover {
+            color: @twitter;
+            transition: 500ms;
+        }
+    }
+    #instagram{
+        &:hover {
+            color: @instagram;
+            transition: 500ms;
+        }
+    }
+    #google{
+        &:hover {
+            color: @google;
+            transition: 500ms;
+        }
+    }
+    #youtube{
+        &:hover {
+            color: @youtube;
+            transition: 500ms;
+        }
+    }
+}
+/*Footer*/
+/*Content Alanı Bitiş*/
+/*Single Alanı Başlangıç*/
+.single-bg{
+    background: #F7F7F7;
+}
+.single-inf{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.single-title{
+    padding:40px 20px;
+    span{
+        border-left:3px solid #0095eb;
+        padding:10px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: @fontRoboto !important;
+    }
+}
+.single-write{
+    padding:0px 20px;
+    padding-bottom: 20px;
+}
+.sidebar-title {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    line-height: 50px;
+    background: #0095eb;
+    padding: 0px !important;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    span {
+        color: #fff;
+        padding-left: 20px;
+        font-size: 17px;
+        i {
+            padding-right: 5px;
+            font-size: 20px;
+        }
+    }
+}
+.sidebar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 0px !important;
+    li{
+        width:100%;
+        list-style: none;
+        height: 50px;
+        margin-left: -0px;
+        line-height: 50px;
+        border-bottom: 1px solid #eee;
+        padding-left:20px;
+        font-size: 15px;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -o-transition: 300ms;
+        a{
+            text-decoration: none;
+            color: #333;
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            -moz-transition: 30ms;
+            -o-transition: 300ms;
+        }
+        &:hover {
+            transition: 300ms;
+            -webkit-transition: 300ms;
+            -moz-transition: 300ms;
+            -o-transition: 300ms;
+            background: #0095eb;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+/*Yorum Alanı*/
+#comments-inf{
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.comments-title{
+    padding: 20px 0px;
+    span{
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: @fontRoboto;
+    }
+}
+.comments-textbox{
+    width: 100%;
+    border:none;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 3px;
+}
+.text-comments{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:none;
+    border:1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+}
+.comments-btn{
+    button{
+        border:none;
+        background: #0095eb;
+        color: #fff;
+        width:100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        transition: 500ms;
+        &:hover{
+            background: #046ae8;
+            transition: 500ms;
+        }
+    }
+}
+.comments-display-btn{
+    padding: 0px !important;
+    button{
+        border:none;
+        width:100%;
+        background: #0095eb;
+        color: #fff;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        padding:0px 0px;
+        font-size: 20px;
+    }
+}
+/*PAGE Alanı Başlangıç*/
+.page-img{
+    img{
+        width:100%;
+        height: 380px;
+    }
+}
+.page-bg{
+    background: #F2F3F5 !important;
+}
+/*PAGE Alanı Bitiş*/
+/*Single Alanı Bitiş*/
+/*PRODUCT BAŞLANGIÇ*/
+.product-inf{
+    padding: 20px 0px;
+}
+.product-img {
+    z-index: 1 !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 250px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 25px -2px rgba(31, 30, 31, 1);
+    -moz-box-shadow: 3px 3px 25px -2px rgba(31, 30, 31, 1);
+    box-shadow: 3px 3px 25px -2px rgba(31, 30, 31, 1);
+    img {
+        width: 100%;
+        transition: 500ms;
+        &:hover {
+            transition: 500ms;
+            width: 110%;
+            margin-left: -10px;
+            margin-top: -10px;
+            .product-title{
+                display: block !important;
+            }
+        }
+    }
+}
+.product-title{
+    text-align: center;
+    padding: 10px 0px;
+    span{
+        a{
+            color: #333;
+            font-weight: bold;
+            font-family: @fontRoboto;
+            transition: 500ms;
+           &:hover{
+               text-decoration: none;
+               color:#0095eb;
+               transition: 500ms;
+           } 
+        }
+    }
+}
+/*PRODUCT BİTİŞ*/
+@media only screen and (max-width:960px){
+    .head-black{
+        height: auto;
+        .head-black-left{
+            text-align: center;
+        }
+        .head-black-right{
+            text-align: center;
+        }
+    }
+    .carousel-inner{
+        height: auto !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .sidebar{
+        position: relative;
+        margin-top: 0px;
+    }
+    .search-btn{
+        display: none;
+    }
+    .bottom-img{
+        border-top: 2px solid #fff;
+    }
+    #header{
+        position: relative;
+    }
+    .logo{
+        text-align: center;
+    }   
+    #menuGizle{
+        display: none;
+    }
+    
+    .respMenu{
+        width: 100%;
+        display: block;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+    .menu{
+        width:100% !important;
+        position: relative;
+        margin-top: 10px !important;
+        ul{
+            padding: 0px;
+            li{
+                width:100%;
+                background:#333;
+                border-right: 0px !important;
+                border-bottom: 1px solid #fff;
+                border-radius: 3px;
+                a{
+                    color: #fff !important;
+                }
+                &:hover{
+                    a{
+                        border-radius: 0px !important;
+                        background: transparent !important;
+                    }
+                    background: #0095eb;
+                    transition: 500ms;
+                    -webkit-transition: 500ms;
+                    -moz-transition: 500ms;
+                    -o-transition: 500ms;
+                }
+            }
+        }
+    }
+    .carousel-inner{
+        height: auto !important;
+    }
+}
+@media only screen and (min-width:768px) {
+    #menuGizle{
+        display: block !important;
+    }
+    #resp{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .menu{
+        width:100% !important;
+    }
+    .comments-textbox{
+        margin-top: 20px;
+    }
+    .page-img{
+        img{
+            height: 230px !important;
+        }
+    }
+    .footer-left{
+        text-align: center;
+    }
+    .footer-social{
+        text-align: center;
+    }
+}
+@keyframes postanimation{
+    from{
+        top: 1000px;
+        position: absolute;
+        display: none;
+    }
+    to{
+        margin-top: -50px;
+        display: block;
+    }
+}
