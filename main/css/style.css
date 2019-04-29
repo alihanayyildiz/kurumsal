@@ -566,9 +566,9 @@ body {
   overflow-y: hidden;
   max-height: 250px;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 25px -2px #1f1e1f;
-  -moz-box-shadow: 3px 3px 25px -2px #1f1e1f;
-  box-shadow: 3px 3px 25px -2px #1f1e1f;
+  -webkit-box-shadow: 3px 3px 5px -2px #1f1e1f;
+  -moz-box-shadow: 3px 3px 5px -2px #1f1e1f;
+  box-shadow: 3px 3px 5px -2px #1f1e1f;
 }
 .product-img img {
   width: 100%;
